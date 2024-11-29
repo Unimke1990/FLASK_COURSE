@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Page5{% endblock %}
+
+
+
+{% block content %} 
+
+<h1>Welcome Given</h1>
+
+<p>{{message}}</p>
+
+<a href="{{url_for('set_data')}}">Set session data</a><br>
+
+<a href="{{url_for('get_data')}}">Get session data</a><br>
+
+<a href="{{url_for('clear_session')}}">Clear session</a><br>
+
+<a href="{{url_for('create_cookie')}}">Set cookie</a><br>
+
+
+
+{% endblock %}

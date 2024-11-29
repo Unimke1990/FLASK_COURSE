@@ -1,0 +1,50 @@
+,Unnamed: 0,This section contains the topics that have been treated so far in the PLD sessions held in the ALX Accountability Group for the Foundation Sprint. ,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
+0,,The topic and PLD Link cells are clickable and would direct you to the intranet/Google drive folder respectively.,,,,,,
+1,,,,,,,,
+2,,C PROGRAMMING,,,,PYTHON PROGRAMMING,,
+3,,S/N,Topic,PLD Recording Link,,S/N,Topic,PLD Recording Link
+4,,1,"0x00. C - Hello, World",Hello World,,1,"0x00. Python - Hello, World",Hello World (Byte Code Section Missing)
+5,,2,"0x01. C - Variables, if, else, while",Variables,,2,"0x01. Python - if/else, loops, functions",If/Else
+6,,3,"0x02. C - Functions, nested loops",Functions,,3,0x02. Python - import & modules,Import
+7,,4,"0x04. C - More functions, more nested loops",,,4,"0x03. Python - Data Structures: Lists, Tuples",Data Structures
+8,,5,"0x05. C - Pointers, arrays and strings",Pointers,,5,"0x04. Python - More Data Structures: Set, Dictionary",More Data Structures
+9,,6,"0x06. C - More pointers, arrays and strings",,,6,0x05. Python - Exceptions,Exception
+10,,7,"0x07. C - Even more pointers, arrays and strings",,,7,0x06. Python - Classes and Objects,Classes
+11,,8,0x08. C - Recursion,Recursion,,8,0x07. Python - Test-driven development,Test DD
+12,,9,0x09. C - Static libraries,Static Libraries,,9,0x08. Python - More Classes and Objects,More Classes_Objects
+13,,10,"0x0A. C - argc, argv",Argc_Argv,,10,0x09. Python - Everything is object,Everything is an object
+14,,11,"0x0B. C - malloc, free",Malloc,,11,0x0A. Python - Inheritance,Inheritance
+15,,12,"0x0C. C - More malloc, free",,,12,0x0B. Python - Input/Output,Input/Output
+16,,13,"0x0E. C - Structures, typedef",Structures/Typedef,,13,0x00. AirBnB clone - The console,AirBnB Console
+17,,14,0x0F. C - Function pointers,Function_pointers,,14,0x01. AirBnB clone - Web static,Web Static
+18,,15,0x10. C - Variadic functions,Variadic_Functions,,15,0x0F. Python - Object-relational mapping,ORM
+19,,16,0x12. C - Singly linked lists,Singly LL,,16,0x10. Python - Network #0,Python Networking
+20,,17,0x13. C - More singly linked lists,,,17,0x11. Python - Network #1,
+21,,18,0x17. C - Doubly linked lists,Doubly LL,,18,0x04. AirBnB clone - Web framework,Web Framework
+22,,19,0x1A. C - Hash tables,Hash Table,,19,0x02. AirBnB clone - MySQL,MySQL
+23,,20,0x1E. C - Search Algorithms,Sorting Algorithm,,20,0x03. AirBnB clone - Deploy static,Deploy Static
+24,,21,0x11. C - printf,Printf,,,,
+25,,,,,,,,
+26,,,,,,,,
+27,,NETWORKING,,,,SQL,,
+28,,S/N,Topic,PLD Recording Link,,S/N,Topic,PLD Recording Link
+29,,1,0x07. Networking basics #0,Networking,,1,0x0D. SQL - Introduction,SQL
+30,,2,0x08. Networking basics #1,,,2,0x0E. SQL - More queries,
+31,,,,,,3,0x14. MySQL,MySQL
+32,,,,,,,,
+33,,JAVASCRIPT,,,,EVERYTHING WEB,,
+34,,S/N,Topic,PLD Recording Link,,S/N,Topic,PLD Recording Link
+35,,1,0x12. JavaScript - Warm up,JavaScript,,1,0x0A. Configuration management,SSH & Configuration Management
+36,,2,"0x13. JavaScript - Objects, Scopes and Closures",,,2,0x0B. SSH,
+37,,3,0x14. JavaScript - Web scraping,Web Scraping,,3,0x0C. Web server,Web Server & Stack Debugging
+38,,4,0x15. JavaScript - Web jQuery,Web jQuery,,4,0x0D. Web stack debugging #0,
+39,,,,,,5,0x0E. Web stack debugging #1,
+40,,,,,,6,0x0F. Load balancer,Load Balancer
+41,,,,,,7,0x10. HTTPS SSL,HTTPS SSL
+42,,,,,,8,0x13. Firewall,Firewall
+43,,,,,,9,0x12. Web stack debugging #2,Web stack debugging 2
+44,,,,,,10,0x15. API,API
+45,,,,,,11,0x18. Webstack monitoring,Webstack Monitoring
+46,,,,,,12,0x16. API advanced,API Advanced
+47,,,,,,13,0x17. Web stack debugging #3,Web stack debugging 3
+48,,,,,,14,0x1B. Web stack debugging #4,Web stack debugging 4

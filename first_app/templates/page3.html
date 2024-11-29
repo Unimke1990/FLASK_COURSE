@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %} My Page3 {% endblock %}
+
+{% block content %}
+
+<h2>Working with Post Requests and Forms</h2>
+
+<form method="POST" action="{{url_for('page3')}}">
+    <input type="text" name="username" placeholder="username"><br>
+    <input type="password" name="password" placeholder="password"><br>
+    <input type="submit" value="login"><br>
+</form>
+
+<h2>File upload</h2>
+
+<form method="POST" action="{{ url_for('file_upload') }}" enctype="multipart/form-data">
+    <input type="file" name="file" accept="application/msword, application/vnd.ms-excel" required><br>
+
+    <input type="submit" value="upload file"><br>
+</form>
+
+<h2>Convert to CSV</h2>
+
+<form method="POST" action="{{ url_for('convert_csv') }}" enctype="multipart/form-data">
+    <input type="file" name="file" accept="application/msword, application/vnd.ms-excel" required><br>
+
+    <input type="submit" value="upload file"><br>
+</form>
+
+<h2>Send Response to a Download Page</h2>
+
+<form method="POST" action="{{ url_for('convert_csv2') }}" enctype="multipart/form-data">
+    <input type="file" name="file" accept="application/msword, application/vnd.ms-excel" required><br>
+
+    <input type="submit" value="upload file"><br>
+</form>
+
+<h1>Send JSON request</h1>
+<button id="post_button">Send POST Request</button>
+
+
+
+
+{% endblock %}

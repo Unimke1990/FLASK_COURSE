@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %} My Flask App {% endblock %}
+
+{% block content %}
+
+    <h1>Getting my app ready!</h1>
+    <h2>{{myname}}</h2>
+    <h2>{{myage}}</h2>
+    <h3>{{myname | reverse_string}}</h3>
+    <p>
+        <ul>
+            {% for items in mylist %}
+                {% if items <= 30 %}
+                <li style= "color: blue">
+                    {{ items }}
+                </li>
+                
+                {% else %}
+                <li style="color: red;">{{ items }}</li>
+                
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </p>
+
+#getting the dynamic url of another endpoint rendered in another page
+    <a href="{{ url_for('page2') }}">other</a>
+
+{% endblock %}
