@@ -60,18 +60,18 @@ def remove_cookie():
 @app5.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
-        return render_template('login.html', message='')
+        return render_template('login.html')
     
     elif request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
         
         if username == "given" and password == "password":
-            flash('login successful')
+            flash('login successful!')
             return render_template('page5.html', message='')  
-    else:
-        flash('login failed')
-        return render_template('login.html')
+        else:
+            flash('login failed')
+            return render_template('page5.html')
         
         
 
