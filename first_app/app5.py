@@ -1,6 +1,6 @@
 #session & cookies management, and message flashing
 
-from flask import Flask, render_template, session, make_response, request
+from flask import Flask, render_template, session, make_response, request, flash
 
 app5 = Flask(__name__, template_folder='templates')
 app5.secret_key = 'given'
@@ -56,8 +56,24 @@ def remove_cookie():
     return response
 
 
-
-
+#creating a flash message for login page
+@app5.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'GET':
+        return render_template('login.html', message='')
+    
+    elif request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
+        
+        if username == "given" and password == "password":
+            flash('login successful')
+            return render_template('page5.html', message='')  
+    else:
+        flash('login failed')
+        return render_template('login.html')
+        
+        
 
 
 if __name__ == '__main__':
