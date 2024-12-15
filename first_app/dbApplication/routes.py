@@ -6,5 +6,19 @@ def register_route(app, db):
 
     @app.route('/', methods=['GET', 'POST'])
     def index():
-        people = Person.query.all()
-        return render_template('index.html', people=people)
+        if request.method == 'GET':
+            people = Person.query.all()
+            return render_template('index.html', people=people)
+        
+        elif request.method == 'POST':
+            name = request.form.get('name')
+            age = int(request.form.get('age'))
+            job = request.form.get('job')
+
+            person = Person(name=name, age=age, job=job)
+
+            db.session.add(person)
+            db.session.commit()
+
+            people = Person.query.all()
+            return render_template('index.html', people=people)
