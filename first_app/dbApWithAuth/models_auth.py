@@ -7,13 +7,18 @@ from flask_login import UserMixin
 class User(db.Model, UserMixin):
     __tablename__ = 'users'
 
-    pid = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.Text, nullable=False)
-    age = db.Column(db.Integer)
-    job = db.Column(db.Text)
+    uid = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String, nullable=False)
+    password = db.Column(db.String, nullable=False)
+    role = db.Column(db.String)
+    description = db.Column(db.String)
+
 
     def __repr__(self):
-        return f"person with name {self.name} and age: {self.age}"
+        return f"person with username {self.username} and role: {self.role}"
+    
+    def get_id(self):
+        return self.uid
     
     
 

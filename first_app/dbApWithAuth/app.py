@@ -10,14 +10,30 @@ db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__, template_folder='templates')
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./seconddb.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./firstdb.db'
     app.config['SECRET_KEY'] = 'password'
 
     db.init_app(app)
 
-    from routes import register_route
-    register_route(app, db)
 
+
+    login_manager = LoginManager()
+    login_manager.init_app(app)
+
+    #how the login manager will load a user
+    from models_auth import User
+
+    @login_manager.user_loader
+    def load_user(uid):
+        return User.query.get(uid)
+
+    bycrypt = Bcrypt(app)
+    
+
+
+    from routes import register_route
+    register_route(app, db, bycrypt)
+    
     migrate = Migrate(app, db)
 
     return app
